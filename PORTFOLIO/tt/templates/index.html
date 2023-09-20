@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="static/stylesss.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="container nav-section">
+            <div class="brand-and-navbtn">
+                <span class="brand-name">
+                    CHETANLAB
+                </span>
+                <span class="navbtn flex">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+            <!-- navigation menu -->
+            <nav class="top-nav">
+                <ul>
+                    <li> <a href="" class="active">Home</a></li>
+                    <li> <a href="gallery" class="active">Gallery</a></li>
+                    <li> <a href="blog" class="active">Blog</a></li>
+                    <li> <a href="contact" class="active">Contact</a></li>
+
+                </ul>
+            </nav>
+            <span class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </div>
+
+        <div class="container about">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="static/img.jpeg" alt="photographer image" height="50%" width="50%">
+                </div>
+                <h2>I'm Chetan Avanti</h2>
+                <h3>Photographer | Traveller</h3>
+                <blockquote>
+                    "Photography is the story I fail to put into words." - Destin Sparks
+                </blockquote>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </header>
+        <!-- end of header -->
+        <!-- main -->
+        <section class="secttion-one">
+            <div class="container">
+                <div class="sec-one-left">
+                    <!-- imagseeeeee -->
+                    <div>
+                        <h3>Capturing life's moments, one click at a time</h3>
+                        <p>
+                            Welcome to our world of visual storytelling, where every photograph is a canvas for emotions and memories. Our passion is to capture the essence of life's most precious moments, turning them into timeless works of art. With a keen eye for detail and a heart full of creativity, we invite you to explore our portfolio and let us tell your unique story through the lens
+                        </p>
+                        <a href="#" class="btn">view all</a>
+                    </div>
+                </div>
+                <div class="sec-one-right">
+                    <div class="work-content">
+                        <p>Through the art of photography, we transform moments into memories that last a lifetime. Let us capture your story with creativity and passion</p>
+                        <a href="#" class="btn">view all</a>
+                    </div>
+                    <div class="work-imgs">
+                        <div class="work-img-1">
+                            <img src="static/img2.jpeg" class="reduce">
+                        </div>
+                        <div class="work-img-2">
+                            <img src="static/img2.jpeg" class="reduce">
+                        </div>
+                        <h3>"Taking an image,freezing a moment,reveals how rich reality truly is."</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-two">
+            <div class="container">
+                <h2>FOLLOW ON INSTAGRAM</h2>
+                <span>@chetan_photographer</span>
+                <div class="insta-imgs">
+                    <div>
+                        <img src="static/model.jpeg">
+                        <div class="icon-overlay flex">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                            <img src="static/model.jpeg">
+                            <div class="icon-overlay flex">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <img src="static/model.jpeg">
+                                <div class="icon-overlay flex">
+                                    <i class="fa-brands fa-instagram"></i>
+
+                                </div>
+                                <div>
+                                    <img src="static/model.jpeg">
+                                    <div class="icon-overlay flex">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-container container">
+                <div>
+                    <h2>CHETAN AVANTI</h2>
+                    <p>As someone deeply passionate about both photography and engineering, I find a unique synergy between the precision of technology and the artistry of visual storytelling, allowing me to create captivating and innovative photographic experiences</p>
+                </div>
+                <div>
+                    <h3>Free Subscription!</h3>
+                    <p>Enjoy the perks of a free subscription, granting you access to our premium content and exclusive features without any cos</p>
+                    <div class="subs">
+                        <form method="POST" action="{{ url_for('handle_subs') }}">
+                            <input type="text" name="email" placeholder="email">
+                            <button type="submit">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <p> &copy; Copyright CHETAN , SIMPLE AND NICE TEMPLATE</p>
+    </footer>
+    <!-- end of footer section -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

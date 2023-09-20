@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Names</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="static/stylesss.css">
+    <style>
+        .subscount{
+            left: -300px;
+            color: rebeccapurple;
+            width: 300px; 
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container nav-section">
+        <div class="brand-and-navbtn">
+            <span class="brand-name">
+                CHETANLAB
+            </span>
+            <span class="navbtn flex">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+        <!-- navigation menu -->
+        <nav class="top-nav">
+            <ul>
+                <li> <a href="/" class="active">Home</a></li>
+                <li> <a href="gallery" class="active">Gallery</a></li>
+                <li> <a href="blog" class="active">Blog</a></li>
+                <li> <a href="contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+    </div>
+    <div class="subscount">
+        <h1>Count of subscribers</h1>
+    
+        <h3>{{names}}</h3>
+    </div>
+</body>
+</html>

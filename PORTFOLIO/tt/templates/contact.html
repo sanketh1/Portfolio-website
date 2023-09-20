@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="static/stylesss.css">
+    <link rel="stylesheet" href="static/contact.css">
+    <style>
+        contactdivforexcel{
+            color: rebeccapurple;
+            left: 20000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container nav-section">
+        <div class="brand-and-navbtn">
+            <span class="brand-name">
+                CHETANLAB
+            </span>
+            <span class="navbtn flex">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+        <nav class="top-nav">
+            <ul>
+                <li> <a href="/" class="active">Home</a></li>
+                <li> <a href="gallery" class="active">Gallery</a></li>
+                <li> <a href="blog" class="active">Blog</a></li>
+                <li> <a href="contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+    </div>
+    <div class = "contactdivforexcel">
+        <h1>Contact Me</h1>
+        <p>Use the form below to get in touch</p>
+        <form method="POST" action="/contactmsg" class="formclasside">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="msg" name="msg" rows="4" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

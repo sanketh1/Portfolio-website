@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="static/stylesss.css">
+    <style>
+        img {
+            max-width: 48%;
+            height: auto;
+            border: 1px solid #ccc; 
+            margin: 10px; 
+            padding-left: 10px; 
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container nav-section">
+        <div class="brand-and-navbtn">
+            <span class="brand-name">
+                CHETANLAB
+            </span>
+            <span class="navbtn flex">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+        <nav class="top-nav">
+            <ul>
+                <li> <a href="/" class="active">Home</a></li>
+                <li> <a href="gallery" class="active">Gallery</a></li>
+                <li> <a href="blog" class="active">Blog</a></li>
+                <li> <a href="contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+    </div>
+    
+    <div class="image-container">
+        {% for url in links %}
+        <img src="{{ url }}" />
+        {% endfor %}
+    </div>
+</body>
+</html>
